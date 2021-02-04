@@ -10,6 +10,8 @@ namespace CAT
     {
         static void Main(string[] args)
         {
-        }
+            Cat cat = new Cat("Some cat nickname", 2, 50,350,10,"Male");
+            cat.ShowCatInfo();
+        } 
     }
 }
