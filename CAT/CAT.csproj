@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Cat.cs" />
     <Compile Include="CatHouse.cs" />
+    <Compile Include="PetShop.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

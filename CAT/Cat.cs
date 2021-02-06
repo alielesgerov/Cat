@@ -61,7 +61,7 @@ namespace CAT
             }
             set
             {
-                if(value<0||value>100)
+                if(value<0)
                     throw new InvalidOperationException("Meal Quantity must be more than 0 and less than 100!");
                 meal_quantity = value;
             }
@@ -97,9 +97,9 @@ namespace CAT
         }
         public void Play()
         {
-            if (Energy < 100)
+            if (Energy != 0)
                 Energy -= 10;
-            else if (Energy == 0)
+            else
             {
                 Console.WriteLine("Your cat want to sleep");
                 System.Threading.Thread.Sleep(1000);
