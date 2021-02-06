@@ -82,7 +82,7 @@ namespace CAT
             if (Energy>0&&Energy < 100)
             {
                 Energy += 10;
-                MealQuantity++;
+                MealQuantity+=100;
             }
             else if (Energy == 0)
             {
@@ -109,6 +109,8 @@ namespace CAT
 
         public void ShowCatInfo()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("=================================================");
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Nickname: ");
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -128,11 +130,11 @@ namespace CAT
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Meal Quantity: ");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(MealQuantity);
+            Console.WriteLine($"{MealQuantity}g");
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Price: ");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(Price);
+            Console.WriteLine($"{Price}$");
             Console.ForegroundColor = ConsoleColor.White;
 
         }
